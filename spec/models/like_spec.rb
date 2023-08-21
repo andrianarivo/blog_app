@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Like, type: :model do
+RSpec.describe Like, type: :model do
   @user = User.new(name: 'Gloria', photo: 'https://photo.url', bio: 'I am beautiful')
   @post = Post.new(author: @user, title: 'My post', text: 'Everyone, look here!')
 

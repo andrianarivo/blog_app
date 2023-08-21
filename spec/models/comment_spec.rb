@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Comment, type: :model do
+RSpec.describe Comment, type: :model do
   @user = User.new(name: 'Constance', photo: 'http://photo.url', bio: 'I am preserve')
   @post = Post.new(author: @user, title: 'New Post!', text: 'Text for new POst')
 
