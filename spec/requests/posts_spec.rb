@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "Posts", type: :request do
-  describe "GET /users/:id/posts" do
-    it "renders the index action with index view" do
+RSpec.describe 'Posts', type: :request do
+  describe 'GET /users/:id/posts' do
+    it 'renders the index action with index view' do
       get '/users/1/posts'
       expect(response).to have_http_status(:success)
       expect(response.status).to eq(200)

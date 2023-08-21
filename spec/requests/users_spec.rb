@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "Users", type: :request do
-  describe "GET /users" do
-    it "renders the index action with index view" do
+RSpec.describe 'Users', type: :request do
+  describe 'GET /users' do
+    it 'renders the index action with index view' do
       get '/users'
       expect(response).to have_http_status(:success)
       expect(response.status).to eq(200)
