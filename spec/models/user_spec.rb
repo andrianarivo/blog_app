@@ -25,6 +25,6 @@ RSpec.describe User, type: :model do
   end
 
   it '#three_most_recent_posts returns correct value' do
-    expect(subject.three_most_recent_posts.length).to be <= 3
+    expect(subject.three_recent_posts.length).to be <= 3
   end
 end
