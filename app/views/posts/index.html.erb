@@ -1,1 +1,16 @@
-<p>Here is a list of posts for a given user</p>
+<div class="container mt-5">
+  <%= render 'shared/user_card', user: @author %>
+
+  <% @posts.each do |post| %>
+    <a href="/users/<%= post.author.id %>/posts/<%= post.id %>" class="text-decoration-none">
+      <%= render 'shared/post_card', post: post %>
+    </a>
+  <% end %>
+  <nav aria-label="Pagination for posts" class="mt-5">
+    <ul class="pagination justify-content-center">
+      <% (1..@total_pages).each do |page| %>
+        <li class="page-item"><a class="page-link" href="/users/<%= @author.id %>/posts?page=<%= page %>"><%= page %></a></li>
+      <% end %>
+    </ul>
+  </nav>
+</div>
