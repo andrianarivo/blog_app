@@ -4,6 +4,7 @@
   <% @posts.each do |post| %>
     <a href="/users/<%= post.author.id %>/posts/<%= post.id %>" class="text-decoration-none">
       <%= render 'shared/post_card', post: post %>
+      <%= render 'shared/comments_card', comments: post.five_recent_comments %>
     </a>
   <% end %>
   <nav aria-label="Pagination for posts" class="mt-5">

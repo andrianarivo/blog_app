@@ -4,6 +4,7 @@ class PostsController < ApplicationController
     per_page = 10
 
     @posts = Post.includes(:author)
+                 .includes(:comments)
                  .where(author: params[:user_id])
                  .order(created_at: :asc)
                  .offset((page.to_i - 1) * per_page)
@@ -13,5 +14,7 @@ class PostsController < ApplicationController
     @author = @posts.first.author
   end
 
-  def show; end
+  def show
+    @post = Post.find(params[:id])
+  end
 end
