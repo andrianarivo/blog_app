@@ -1,1 +1,10 @@
-<p>Here is a list of all users</p>
+<div class="container mt-5">
+  <% if @users.empty? %>
+    <p>There are no users for now</p>
+  <% end %>
+  <% @users.each do |user| %>
+    <a href="/users/<%= user.id %>" class="text-decoration-none">
+      <%= render 'shared/user_card', user: user %>
+    </a>
+  <% end %>
+</div>
