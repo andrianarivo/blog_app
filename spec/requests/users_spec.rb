@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
-
   before(:all) do
-    @user = User.create(name: 'Tom', photo: 'https://placehold.co/200x133', bio: 'Teacher from Mexico.', posts_counter: 0)
+    @user = User.create(name: 'Tom', photo: 'https://placehold.co/200x133', bio: 'Teacher from Mexico.',
+                        posts_counter: 0)
   end
 
   describe 'GET /users' do

@@ -1,10 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-
   before(:all) do
-    @user = User.create(name: 'Tom', photo: 'https://placehold.co/200x133', bio: 'Teacher from Mexico.', posts_counter: 0)
-    @post = Post.create(author: @user, title: 'Hello', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
+    @user = User.create(name: 'Tom', photo: 'https://placehold.co/200x133', bio: 'Teacher from Mexico.',
+                        posts_counter: 0)
+    @post = Post.create(author: @user, title: 'Hello', text: 'This is my first post', comments_counter: 0,
+                        likes_counter: 0)
   end
 
   describe 'GET /users/:id/posts' do
