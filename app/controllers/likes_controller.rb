@@ -7,7 +7,7 @@ class LikesController < ApplicationController
     if like.save
       flash[:success] = 'Like saved successfully'
     else
-      flash.now[:error] = "Error: Like could not be saved"
+      flash.now[:error] = 'Error: Like could not be saved'
     end
 
     redirect_to '/'

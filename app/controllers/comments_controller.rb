@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
       flash[:success] = 'Comment saved successfully'
       redirect_to '/'
     else
-      flash.now[:error] = "error: comment could not be saved"
+      flash.now[:error] = 'error: comment could not be saved'
       redirect_to new_comment
     end
   end
