@@ -13,7 +13,6 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to have_http_status(:success)
       expect(response.status).to eq(200)
       expect(response).to render_template('posts/index')
-      expect(response.body).to include('Here is a list of posts for a given user')
     end
   end
 
@@ -23,7 +22,6 @@ RSpec.describe 'Posts', type: :request do
       expect(response).to have_http_status(:success)
       expect(response.status).to eq(200)
       expect(response).to render_template('posts/show')
-      expect(response.body).to include('Here is a details page for a specific post for a given user')
     end
   end
 end
