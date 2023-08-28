@@ -9,6 +9,11 @@ class Post < ApplicationRecord
   validates :comments_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
   validates :likes_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
 
+  def excerpt
+    return text unless text.length > 50
+    "#{text.slice(0, 50)} ..."
+  end
+
   def update_posts_counter
     author.update(posts_counter: author.posts.count)
   end
