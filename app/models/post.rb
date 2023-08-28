@@ -11,6 +11,7 @@ class Post < ApplicationRecord
 
   def excerpt
     return text unless text.length > 50
+
     "#{text.slice(0, 50)} ..."
   end
 

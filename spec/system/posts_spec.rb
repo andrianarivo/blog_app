@@ -7,12 +7,14 @@ RSpec.describe 'Posts', type: :system do
     User.delete_all
     @tom = User.create(name: 'Tom', photo: 'https://placehold.co/200x133', bio: 'Teacher from Mexico.',
                        posts_counter: 0)
-    @first_post = Post.create(author: @tom, title: 'Hello', text: 'This is my first post', comments_counter: 0, likes_counter: 0)
+    @first_post = Post.create(author: @tom, title: 'Hello', text: 'This is my first post', comments_counter: 0,
+                              likes_counter: 0)
     @lilly = User.create(name: 'Lilly', photo: 'https://placehold.co/200x133', bio: 'Teacher from Poland.',
                          posts_counter: 0)
-    @second_post = Post.create(author: @lilly, title: 'Hi Word!', text: 'Lets talk', comments_counter: 0, likes_counter: 0)
-    Comment.create(post: @first_post, author: @lilly, text: 'Hi Tom!' )
-    Comment.create(post: @second_post, author: @tom, text: 'Hi Lili!' )
+    @second_post = Post.create(author: @lilly, title: 'Hi Word!', text: 'Lets talk', comments_counter: 0,
+                               likes_counter: 0)
+    Comment.create(post: @first_post, author: @lilly, text: 'Hi Tom!')
+    Comment.create(post: @second_post, author: @tom, text: 'Hi Lili!')
     @users = User.all
     @posts = Post.all
   end
