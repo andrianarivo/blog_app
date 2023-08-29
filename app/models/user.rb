@@ -11,8 +11,17 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :posts_counter, numericality: { greater_than_or_equal_to: 0, only_integer: true }
+  validates :role, inclusion: { in: %w(admin user), message: "%{value} is not a valid role [admin, user]" }
 
   before_create :default_posts_counter
+
+  # User::Roles
+  # The available roles
+  Roles = [ :admin , :user ]
+
+  def is?( requested_role )
+    self.role == requested_role.to_s
+  end
 
   def default_posts_counter
     posts_counter || 0
