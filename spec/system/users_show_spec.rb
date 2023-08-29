@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Users#shows", type: :system do
+RSpec.describe 'Users#shows', type: :system do
   before(:all) do
     Comment.delete_all
     Post.delete_all
