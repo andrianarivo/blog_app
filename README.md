@@ -134,6 +134,13 @@ You can deploy this project using your own deployment solution
 - GitHub: [@amazinggacee](https://github.com/Amazinggracee)
 - Twitter: [@amazinggaceu](https://twitter.com/amazinggraceu)
 - LinkedIn: [Amarachi Dimkpa](https://linkedin.com/in/amarachi-dimkpa)
+
+👤 **Aimable BANCUNGUYE**
+
+- GitHub: [@bancunguye66](https://github.com/bancunguye66)
+- Twitter: [@bancunguye66](https://twitter.com/bancunguye66)
+- LinkedIn: [Aimable BANCUNGUYE](https://www.linkedin.com/in/aimable-bancunguye/)
+
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
