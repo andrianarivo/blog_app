@@ -15,7 +15,7 @@ class User < ApplicationRecord
   before_create :default_posts_counter
 
   def default_posts_counter
-    posts_counter ||= 0
+    posts_counter || 0
   end
 
   def three_recent_posts
