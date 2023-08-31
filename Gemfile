@@ -33,6 +33,9 @@ gem 'devise'
 # Authorization gem
 gem 'cancancan'
 
+# rswag
+gem 'rswag'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
