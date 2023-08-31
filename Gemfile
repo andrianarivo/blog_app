@@ -29,9 +29,16 @@ gem 'jbuilder'
 
 # Authentication gem
 gem 'devise'
+gem 'devise-jwt'
 
 # Authorization gem
 gem 'cancancan'
+
+# Rack Middleware
+gem 'rack-cors'
+
+# Json Web Token
+gem 'jwt'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
