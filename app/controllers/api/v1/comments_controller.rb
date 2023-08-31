@@ -9,7 +9,7 @@ class Api::V1::CommentsController < Api::ApiController
 
   def create
     @comment = @post.comments.new(comment_params)
-    @comment.author = @user
+    @comment.author = jwt_user
 
     if @comment.save
       render json: @comment, status: :created
@@ -28,4 +28,5 @@ class Api::V1::CommentsController < Api::ApiController
     @user = User.find(params[:user_id])
     @post = @user.posts.find(params[:post_id])
   end
+
 end
