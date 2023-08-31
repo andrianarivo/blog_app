@@ -1,8 +1,9 @@
 <div class="container mt-5">
-  <%= render 'shared/user_card', user: @author %>
+  <%= render 'shared/user_card', user: @author unless @author.nil? %>
 
   <% if @posts.empty? %>
     <p>This user has no posts yet</p>
+    <%= link_to 'Back to users', '/users', class: 'btn btn-info' %>
   <% end %>
   <% @posts.each do |post| %>
     <a href="/users/<%= post.author.id %>/posts/<%= post.id %>" class="text-decoration-none">
