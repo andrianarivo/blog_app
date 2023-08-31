@@ -1,5 +1,4 @@
 class Api::V1::CommentsController < Api::ApiController
-
   before_action :find_user_post
 
   def index

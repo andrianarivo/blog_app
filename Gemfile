@@ -57,7 +57,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # gem "image_processing", "~> 1.2"
 
 # Active Model Serializer
-gem "active_model_serializers"
+gem 'active_model_serializers'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -83,4 +83,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
-

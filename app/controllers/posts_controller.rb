@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   authorize_resource
 
-  before_action :find_user_post, only: [:show, :like]
+  before_action :find_user_post, only: %i[show like]
 
   def index
     page = params[:page] || 1
