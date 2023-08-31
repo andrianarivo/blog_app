@@ -23,6 +23,8 @@ Rails.application.routes.draw do
           resources :comments, only: [:index, :create]
         end
       end
+
+      post '/sign_in', to: 'sessions#create', as: 'api_v1_user_session'
     end
   end
 end
