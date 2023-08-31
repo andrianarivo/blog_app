@@ -17,6 +17,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v7.0.7, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actiontext (v7.0.7, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v7.0.7, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_model_serializers (v0.10.13, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activejob (v7.0.7, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v7.0.7, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v7.0.7, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -31,6 +32,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.4.10, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cancancan (v3.5.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.39.2, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="case_transform (v0.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.2.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.8.0, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -44,6 +46,7 @@
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.7.4, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v2.6.3, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jsonapi-renderer (v0.2.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.3, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.21.3, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.1, RVM: ruby-3.2.2) [gem]" level="application" />
