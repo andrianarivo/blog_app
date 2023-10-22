@@ -31,3 +31,5 @@
 /config/master.key
 
 node_modules/
+
+/config/docconnect-400809-7d1c00d1fbc9.json
